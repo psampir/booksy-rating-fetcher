@@ -1,5 +1,5 @@
 bin/
 include/
-lib/
+lib**
 pyvenv.cfg
 *.json
