@@ -1,6 +1,6 @@
 # abacosun-rating-fetcher
 
-### Rating fetcher for the Abacosun Ostrów Wielkopolski Website
+### Rating fetcher for the Abacosun Ostrów Wielkopolski website
 
 This script fetches the HTML content from the Abacosun Ostrów Wielkopolski profile on Booksy, parses it to extract the average rating and total reviews count, and saves this data along with the current date and time to a JSON file.
 
