@@ -17,7 +17,7 @@ This script fetches the HTML content from the Abacosun Ostrów Wielkopolski prof
 
 2. Create and activate Python virtual environment:
 
-    **`python -m venv . && ./bin/activate`**
+    **`python -m venv . && chmod +x ./bin/activate && ./bin/activate`**
 
 3. Install required libraries:
 
