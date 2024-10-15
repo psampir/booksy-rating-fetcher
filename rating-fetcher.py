@@ -44,8 +44,8 @@ else:
     exit()
 
 data = { # Save the data to JSON file
-    'average_rating': average_rating,
-    'total_reviews': total_reviews,
+    'average_rating': float(average_rating),
+    'total_reviews': int(total_reviews),
     'date_of_data_fetch': date_of_data_fetch
 }
 
