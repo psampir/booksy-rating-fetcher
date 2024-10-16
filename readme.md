@@ -1,6 +1,6 @@
 # Booksy Rating Fetcher
 
-### Rating fetcher for Booksy profiles
+### Rating fetcher for Booksy profiles.
 
 This script fetches the HTML content from a profile on Booksy, parses it to extract the average rating and total reviews count, and saves this data along with the current date and time to a JSON file.
 
