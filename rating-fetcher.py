@@ -15,7 +15,9 @@ else: # if no arguments provided
 
 path_to_file = os.path.expanduser(path_to_file) # expand the ~ in the path
 
-url = 'https://booksy.com/pl-pl/99537_salon-urody-abacosun-ostrow-wielkopolski_salon-kosmetyczny_17258_ostrow-wielkopolski'
+with open('./url.txt', 'r') as file: # load the URL from the file
+    url = file.read().strip()
+
 response = requests.get(url) # send a GET request to the server
 soup = BeautifulSoup(response.content, 'html.parser') # parse the HTML content of the page
 
@@ -52,4 +54,4 @@ data = { # Save the data to JSON file
 with open(path_to_file, 'w') as file:
     json.dump(data, file) # write the data to the file
 
-print("Data saved to", path_to_file)
+print(f"Data saved to:\t{path_to_file}")

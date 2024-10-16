@@ -1,8 +1,8 @@
-# abacosun-rating-fetcher
+# Booksy Rating Fetcher
 
-### Rating fetcher for the Abacosun Ostrów Wielkopolski website
+### Rating fetcher for Booksy profiles
 
-This script fetches the HTML content from the Abacosun Ostrów Wielkopolski profile on Booksy, parses it to extract the average rating and total reviews count, and saves this data along with the current date and time to a JSON file.
+This script fetches the HTML content from a profile on Booksy, parses it to extract the average rating and total reviews count, and saves this data along with the current date and time to a JSON file.
 
 ## Requirements
 - GNU/Linux or macOS (not tested on Windows)
@@ -11,17 +11,23 @@ This script fetches the HTML content from the Abacosun Ostrów Wielkopolski prof
 
 ## Installation steps
 
-1. Go to the project's root directory:
+1. Go to the project's root directory.
 
-    **`cd /path/to/abacosun-rating-fetcher`**
+    **`cd /path/to/booksy-rating-fetcher`**
 
-2. Create and activate Python virtual environment:
+2. Create and activate Python virtual environment.
 
     **`python -m venv . && chmod +x ./bin/activate && ./bin/activate`**
 
-3. Install required libraries:
+3. Install required libraries.
 
     **`pip install -r requirements.txt`**
+
+4. Create a text file `url.txt` containing the URL of the Booksy profile from which you want to fetch the rating. It must be in the project's root directory.
+    
+    *Example:*
+
+    **`echo https://booksy.com/en-us/dl/show-business/12345 > url.txt`**
 
 ## Running the script
 

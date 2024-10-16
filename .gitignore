@@ -4,3 +4,4 @@ lib**
 pyvenv.cfg
 *.json
 **.DS_Store
+url.txt
